@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+<style>
+    .jumbotron{
+        background-color:#2E2D88;
+        color:white;
+    }
+    body {
+        background-image: url("cloudimage1.jpg");
+    }
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+
+
+<div class = "container">
+    <div class ="page-header" style="text-align: center">
+        <h1 style="color: red">GetWeatherInfo</h1>
+    </div>
+</div>
+
+<div class="jumbotron">
+<div class="container">
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon">Enter city Name</span>
+        <input type="text" class="form-control" placeholder="city Name" id="myText">
+        <span class="input-group-addon">Enter State Code</span>
+        <input type="text" class="form-control" placeholder="city Name" id="StateCode">
+    </div><br>
+    <button class="btn btn-primary btn-block"  role="button" onclick= "parseJsonshourly()">Enter</button>
+</div>
+
+</div>
+
+
+<div class="container" style = "background-color:#60c8e3" style = "color:black">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 style="color:red">Weather details</h1>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <b>Wind speed</b><img src="wind.png" alt="wind" width="20" height="20">
+                    <p id="demo"></p>
+                </div>
+                <div class="col-md-3">
+                    <b>Humidity</b><img src="humidity.png" alt="humidity" width="20" height="20">
+                    <p id="demo1"></p>
+                </div>
+                <div class="col-md-3">
+                    <b>Pressure</b><img src="climate.png" alt="humidity" width="20" height="20">
+                    <p id="demo2"></p>
+                </div>
+                <div class="col-md-3">
+                    <b>Temperature</b><img src="thermometer.png" alt="temperature" width="20" height="20">
+                    <p id="demo3"></p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="col-md-6"> <!--style="background-color:pink;"-->
+            <h1 style="color:red";> Hourly Forecast </h1>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <b>EveryHour(for 5hrs)</b>
+
+                    <p id="timeframe"></p>
+
+
+                </div>
+
+                <div class="col-md-3">
+                    <b>Humidity</b><img src="humidity.png" alt="humidity" width="20" height="20">
+
+                    <p id="hourlydata"></p>
+
+
+                </div>
+                <div class="col-md-3">
+                    <b>Temperature</b><img src="thermometer.png" alt="temperature" width="20" height="20">
+
+                    <p id="hourlydata2"></p>
+
+                </div>
+                <div class="col-md-2">
+                    <b>wind</b><img src="wind.png" alt="wind" width="20" height="20">
+
+                    <p id="winddata"></p>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>
